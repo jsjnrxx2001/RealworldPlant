@@ -1,0 +1,6 @@
+Bean_healthy healthy Bean leaf
+Cashew_healthy healthy Cashew leaf
+Maize_healthy healthy Maize leaf
+Groundnut_healthy healthy Groundnut leaf
+Potato_healthy healthy Potato leaf
+Pumpkin_healthy healthy Pumpkin leaf

@@ -1,0 +1,18 @@
+{
+  "input": "C:\\Users\\JSJN2018\\Desktop\\数据集\\realworld",
+  "output": "C:\\Users\\JSJN2018\\Desktop\\realworld_locoop",
+  "id_classes": 6,
+  "ood_classes": 16,
+  "train_images": 2696,
+  "val_images": 674,
+  "test_images": 674,
+  "ood_images": 2595,
+  "class_to_label": {
+    "Bean_healthy": 0,
+    "Cashew_healthy": 1,
+    "Maize_healthy": 2,
+    "Groundnut_healthy": 3,
+    "Potato_healthy": 4,
+    "Pumpkin_healthy": 5
+  }
+}
