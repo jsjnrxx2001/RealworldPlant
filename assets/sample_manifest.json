@@ -1,0 +1,160 @@
+[
+  {
+    "figure": "samples.jpg",
+    "crop": "Bean",
+    "state": "healthy",
+    "path": "train/Bean_healthy/80c0d76d-5c40-5383-ab6e-4d87032f7437.jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Bean",
+    "state": "abnormal",
+    "class": "Bean_angular_leaf_spot",
+    "path": "ood_bean/Bean_angular_leaf_spot/96a8c7b9-ceef-58e0-a029-c15f8b1e55d2.jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Cashew",
+    "state": "healthy",
+    "path": "train/Cashew_healthy/1 (325).jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Cashew",
+    "state": "abnormal",
+    "class": "Cashew_red_rust",
+    "path": "ood_cashew/Cashew_red_rust/1 (377).jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Maize",
+    "state": "healthy",
+    "path": "train/Maize_healthy/1 (193).jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Maize",
+    "state": "abnormal",
+    "class": "Maize_streak_virus",
+    "path": "ood_corn/Maize_streak_virus/1 (282).jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Groundnut",
+    "state": "healthy",
+    "path": "train/Groundnut_healthy/8062ab62-51e8-54f5-97bd-6aa32a2380cc.jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Groundnut",
+    "state": "abnormal",
+    "class": "Groundnut_rust",
+    "path": "ood_groundnut/Groundnut_rust/777b8fa5-0570-501f-8414-be2895c50ffd.jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Potato",
+    "state": "healthy",
+    "path": "train/Potato_healthy/1 (19).jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Potato",
+    "state": "abnormal",
+    "class": "Patato_Fungi",
+    "path": "ood_potato/Patato_Fungi/1 (275).jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Pumpkin",
+    "state": "healthy",
+    "path": "train/Pumpkin_healthy/82325154-5d4b-5e06-b3e2-fbe1b97d5aaf.jpg"
+  },
+  {
+    "figure": "samples.jpg",
+    "crop": "Pumpkin",
+    "state": "abnormal",
+    "class": "Pumpkin_powdery_mildew",
+    "path": "ood_pumpkin/Pumpkin_powdery_mildew/83d958bc-561c-54f1-af18-55cf8d557b4f.jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Bean_angular_leaf_spot",
+    "path": "ood_bean/Bean_angular_leaf_spot/96a8c7b9-ceef-58e0-a029-c15f8b1e55d2.jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Bean_rust",
+    "path": "ood_bean/Bean_rust/792ba3f8-ae76-5dad-b86e-2c3548301337.jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Cashew_leaf_miner",
+    "path": "ood_cashew/Cashew_leaf_miner/1 (423).jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Cashew_red_rust",
+    "path": "ood_cashew/Cashew_red_rust/1 (377).jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Groundnut_early_leaf_spot",
+    "path": "ood_groundnut/Groundnut_early_leaf_spot/87423b8f-a803-5d97-844d-fb666ee9275a.jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Groundnut_late_leaf_spot",
+    "path": "ood_groundnut/Groundnut_late_leaf_spot/776826f5-dac2-5b14-9c45-36cd2d968667.jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Groundnut_nutrition_deficiency",
+    "path": "ood_groundnut/Groundnut_nutrition_deficiency/844b16d2-c95d-5022-8c41-d557de9cdeb7.jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Groundnut_rust",
+    "path": "ood_groundnut/Groundnut_rust/777b8fa5-0570-501f-8414-be2895c50ffd.jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Maize_leaf_blight",
+    "path": "ood_corn/Maize_leaf_blight/1 (384).jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Maize_streak_virus",
+    "path": "ood_corn/Maize_streak_virus/1 (282).jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Patato_Fungi",
+    "path": "ood_potato/Patato_Fungi/1 (275).jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Patato_Nematode",
+    "path": "ood_potato/Patato_Nematode/1 (40).JPG"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Pumpkin_bacterial_leaf_spot",
+    "path": "ood_pumpkin/Pumpkin_bacterial_leaf_spot/735c5273-1340-53d9-bd0c-0d543b9453c4.jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Pumpkin_downy_mildew",
+    "path": "ood_pumpkin/Pumpkin_downy_mildew/8f306a35-4643-5406-b302-12aaceb8f292.jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Pumpkin_mosaic_disease",
+    "path": "ood_pumpkin/Pumpkin_mosaic_disease/64373897-52ce-57d3-b1db-c516a96ebf42.jpg"
+  },
+  {
+    "figure": "abnormal_categories.jpg",
+    "class": "Pumpkin_powdery_mildew",
+    "path": "ood_pumpkin/Pumpkin_powdery_mildew/83d958bc-561c-54f1-af18-55cf8d557b4f.jpg"
+  }
+]
