@@ -144,18 +144,13 @@ print("Abnormal evaluation images:", len(abnormal))
 
 ## 8. Image sources and acknowledgments
 
-This dataset was constructed by curating and reorganizing subsets of public leaf-image resources. Source attribution is recorded by crop and condition below. Background appearance was used to organize the curated scene collection; images from a parent dataset may therefore contribute to either scene collection.
+We acknowledge the providers of the original image collections. The links below document the source resources identified for the corresponding subsets; they do not imply that every image in each original dataset is included here.
 
-| Released crop | Upstream source | Included subset |
-|---|---|---|
-| Bean | [S5](https://github.com/AI-Lab-Makerere/ibean/) | Healthy, angular leaf spot, and bean rust; sample content matches establish the upstream image resource. |
-| Cashew | [S2](https://data.mendeley.com/datasets/z6jp232g5j/1) | Healthy, leaf miner, and red rust subsets. |
-| Maize | [S2](https://data.mendeley.com/datasets/z6jp232g5j/1) | Maize healthy, maize leaf blight, and maize streak virus subsets. |
-| Groundnut | [S6](https://data.mendeley.com/datasets/22p2vcbxfk/3) | Healthy, early leaf spot, late leaf spot, nutrition deficiency, and rust. The released rust group contains examples matching both original `rust_1` and `early_rust_1`. |
-| Potato | [S2](https://data.mendeley.com/datasets/z6jp232g5j/1) | Healthy, Fungi, and Nematode subsets; released abnormal paths retain the spelling `Patato`. |
-| Pumpkin | [P1](https://data.mendeley.com/datasets/wtxcw8wpxb/2) (candidate only) | The five class names match the candidate dataset. Image-content matching has not been completed; provenance remains pending. |
+- [Multi-Crop Leaf Disease Dataset: Corn, Potato, Rice, Tomato, and Cashew](https://data.mendeley.com/datasets/z6jp232g5j/1) — Cashew, maize, and potato.
+- [iBean — Makerere AI Lab](https://github.com/AI-Lab-Makerere/ibean/) — Bean subsets.
+- [Groundnut Plant Leaf Images for Classification and Detection](https://data.mendeley.com/datasets/22p2vcbxfk/3) — Groundnut subsets.
 
-See [SOURCES.md](SOURCES.md) for original folder mappings, authors, dataset versions, DOI links, license references, and attribution details. [class_sources.csv](class_sources.csv) provides class-level source IDs; [source_examples.csv](source_examples.csv) records the checked image examples. These examples support subset attribution and do not constitute a complete per-image provenance manifest.
+Source attribution for the pumpkin subset is being finalized; a verified original-source link will be added when available.
 
 ## 9. Citation
 
