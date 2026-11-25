@@ -2,7 +2,7 @@
 
 **A curated multi-crop leaf image dataset for healthy-reference anomaly detection.**
 
-[6 crops](#3-dataset-statistics) · [16 abnormal categories](#4-abnormal-categories) · [5,965 image entries](#3-dataset-statistics) · [Download](#7-download-and-use) · [Companion dataset](https://github.com/jsjnrxx2001/LabVirtualPlant)
+[6 crops](#3-dataset-statistics) · [16 named abnormal categories](#4-abnormal-categories) · [5,955 image entries](#3-dataset-statistics) · [Download](#7-download-and-use) · [Companion dataset](https://github.com/jsjnrxx2001/LabVirtualPlant)
 
 ![Healthy and abnormal leaf examples](assets/samples.jpg)
 
@@ -14,7 +14,7 @@ Plant leaf images; multi-crop dataset; anomaly detection; out-of-distribution de
 
 ## 2. Dataset description and construction
 
-RealworldPlant is a curated image collection for studying plant leaf anomaly detection with healthy reference samples. It covers bean, cashew, maize, groundnut, potato, pumpkin, with **6 healthy crop categories** and **16 abnormal categories**. Images were selected and reorganized from public plant-image resources, with source links listed below.
+RealworldPlant is a curated image collection for studying plant leaf anomaly detection with healthy reference samples. It covers bean, cashew, maize, groundnut, potato, pumpkin, with **6 healthy crop categories** and **16 named abnormal categories**. Images were selected and reorganized from public plant-image resources, with source links listed below.
 
 The scene grouping is based on **the visual cleanliness of the image background**. This collection emphasizes natural backgrounds, including surrounding vegetation, soil, and hand-held leaves. Its companion [LabVirtualPlant](https://github.com/jsjnrxx2001/LabVirtualPlant) supports evaluation under the complementary background condition. These names describe the curated image appearance rather than a standardized capture device or acquisition location.
 
@@ -27,48 +27,49 @@ The dataset provides a healthy training pool and an evaluation set containing bo
 | Item | Number |
 |---|---:|
 | Healthy crop categories | 6 |
-| Abnormal categories | 16 |
-| Healthy training-pool images | 2,696 |
+| Named abnormal categories | 16 |
+| Abnormal test images with pending subtype | 4 |
+| Healthy training-pool images | 2,695 |
 | Healthy test images | 674 |
-| Abnormal test images | 2,595 |
-| Combined test images | 3,269 |
-| Total image entries | 5,965 |
+| Abnormal test images | 2,586 |
+| Combined test images | 3,260 |
+| Total image entries | 5,955 |
 
 ![Image distribution across crops](assets/distribution.png)
 
-*Figure 2. Image counts by crop and evaluation role, computed from the released JSON manifests. The healthy holdout is counted once.*
+*Figure 2. Image counts by crop and evaluation role, computed from the released JSON manifests. Abnormal test counts include images with a pending subtype.*
 
-| Crop | Healthy train | Healthy test | Abnormal test | Abnormal categories |
-|---|---:|---:|---:|---:|
-| Bean | 308 | 77 | 80 | 2 |
-| Cashew | 254 | 64 | 599 | 2 |
-| Maize | 163 | 41 | 444 | 2 |
-| Groundnut | 1,490 | 372 | 853 | 4 |
-| Potato | 161 | 40 | 458 | 2 |
-| Pumpkin | 320 | 80 | 161 | 4 |
+| Crop | Healthy train | Healthy test | Abnormal test | Named abnormal categories | Pending subtype |
+|---|---:|---:|---:|---:|---:|
+| Bean | 308 | 77 | 80 | 2 | 0 |
+| Cashew | 254 | 64 | 598 | 2 | 0 |
+| Maize | 163 | 41 | 440 | 2 | 4 |
+| Groundnut | 1,490 | 372 | 853 | 4 | 0 |
+| Potato | 160 | 40 | 454 | 2 | 0 |
+| Pumpkin | 320 | 80 | 161 | 4 | 0 |
 
 ## 4. Abnormal categories
 
-![Examples of every abnormal category](assets/abnormal_categories.jpg)
+![Examples of every named abnormal category](assets/abnormal_categories.jpg)
 
-*Figure 3. One released image from every abnormal category. These examples illustrate the repository labels; they are not additional diagnostic annotations. Figure-to-image mappings are recorded in [sample_manifest.json](assets/sample_manifest.json).*
+*Figure 3. One released image from each named abnormal category, shown with its repository label. Figure-to-image mappings are recorded in [sample_manifest.json](assets/sample_manifest.json).*
 
 <details>
-<summary>Expand the complete abnormal-category inventory</summary>
+<summary>Expand the named abnormal-category inventory</summary>
 
 | Category folder | Images |
 |---|---:|
 | `Bean_angular_leaf_spot` | 40 |
 | `Bean_rust` | 40 |
 | `Cashew_leaf_miner` | 231 |
-| `Cashew_red_rust` | 368 |
+| `Cashew_red_rust` | 367 |
 | `Groundnut_early_leaf_spot` | 174 |
 | `Groundnut_late_leaf_spot` | 191 |
 | `Groundnut_nutrition_deficiency` | 167 |
 | `Groundnut_rust` | 321 |
-| `Maize_leaf_blight` | 219 |
-| `Maize_streak_virus` | 225 |
-| `Patato_Fungi` | 390 |
+| `Maize_leaf_blight` | 215 |
+| `Maize_streak_virus` | 221 |
+| `Patato_Fungi` | 386 |
 | `Patato_Nematode` | 68 |
 | `Pumpkin_bacterial_leaf_spot` | 40 |
 | `Pumpkin_downy_mildew` | 40 |
@@ -77,20 +78,27 @@ The dataset provides a healthy training pool and an evaluation set containing bo
 
 </details>
 
+The abnormal test split includes **4** images with conflicting subtype labels. These images have the binary label `"ood"`, are stored under `*_Subtype_Pending/`, and contribute to binary anomaly evaluation. The named category inventory counts only images assigned to a named subtype. [ood_subtype_pending.json](ood_subtype_pending.json) records candidate labels and original relative paths for these images.
+
 ## 5. Data partition and label format
 
-Healthy images are split **within each crop category** into approximately 80% training-pool samples and 20% held-out samples, using random seed **1**. The per-class holdout size is `round(0.2 * class_size)`. The selected abnormal images are assigned to OOD evaluation.
+The original split used random seed **1** to hold out approximately 20% of healthy images within each crop. The current release preserves the original split assignments of the retained samples. The released manifests define the exact partitions used in evaluation.
 
 | File | Contents |
 |---|---|
 | `train.json` | Relative image paths mapped to integer healthy-class labels |
 | `test.json` | Healthy holdout paths mapped to the same integer labels |
 | `ood.json` | Abnormal image paths mapped to the string `"ood"` |
+| `ood_subtype_pending.json` | Candidate subtype labels and provenance for images with conflicting subtype labels |
 | `classnames.txt` | Healthy-class names and text descriptions |
-| `summary.json` | Construction-time summary; its absolute paths describe the original preparation machine |
+| `summary.json` | Current split counts, category counts, and healthy-class label mapping |
 | `split_fewshot.bak/` | Existing healthy-reference selections for different shots and seeds |
 
-Healthy test images are stored under `test/` and indexed by `test.json`. This release contains a healthy training pool, a healthy test set, and an abnormal test set. No separate validation set is provided. Few-shot files use seeds **1, 2, and 3**, with **2, 4, 8, and 16** samples per healthy category; files named with `shot_4096` represent the full training pool, capped by the available class size.
+Healthy test images are stored under `test/` and indexed by `test.json`. This release contains a healthy training pool, a healthy test set, and an abnormal test set. No separate validation set is provided. Few-shot files use seeds **1, 2, and 3**, with up to **2, 4, 8, and 16** samples per healthy category. Categories with fewer than the requested number use all available healthy training images. Files named with `shot_4096` represent the full training pool.
+
+### Dataset cleanup
+
+For one exact-duplicate group spanning healthy train and test, the test copy was retained. Exact duplicate file contents within a split were reduced to one image per group. A SHA-256 check found no exact duplicates across this repository's three splits or within any split. The companion datasets share 55 identical cashew image files. Account for that overlap when combining the datasets or using one to evaluate references from the other.
 
 Original directory spellings are retained for compatibility with the manifests. In particular, `Batol_Gourd` denotes bottle gourd, `Corn`/`Maize` refer to maize, and `Patato` in some abnormal folders denotes potato. Use the released paths verbatim when loading files.
 
@@ -106,6 +114,7 @@ RealworldPlant/
 ├── train.json
 ├── test.json
 ├── ood.json
+├── ood_subtype_pending.json
 ├── classnames.txt
 ├── summary.json
 └── split_fewshot.bak/

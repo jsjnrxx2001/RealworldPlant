@@ -23,7 +23,7 @@
     "crop": "Cashew",
     "state": "abnormal",
     "class": "Cashew_red_rust",
-    "path": "ood_cashew/Cashew_red_rust/1 (377).jpg"
+    "path": "ood_cashew/Cashew_red_rust/1 (376).jpg"
   },
   {
     "figure": "samples.jpg",
@@ -36,7 +36,7 @@
     "crop": "Maize",
     "state": "abnormal",
     "class": "Maize_streak_virus",
-    "path": "ood_corn/Maize_streak_virus/1 (282).jpg"
+    "path": "ood_corn/Maize_streak_virus/1 (284).jpg"
   },
   {
     "figure": "samples.jpg",
@@ -62,7 +62,7 @@
     "crop": "Potato",
     "state": "abnormal",
     "class": "Patato_Fungi",
-    "path": "ood_potato/Patato_Fungi/1 (275).jpg"
+    "path": "ood_potato/Patato_Fungi/1 (274).jpg"
   },
   {
     "figure": "samples.jpg",
@@ -95,7 +95,7 @@
   {
     "figure": "abnormal_categories.jpg",
     "class": "Cashew_red_rust",
-    "path": "ood_cashew/Cashew_red_rust/1 (377).jpg"
+    "path": "ood_cashew/Cashew_red_rust/1 (376).jpg"
   },
   {
     "figure": "abnormal_categories.jpg",
@@ -120,17 +120,17 @@
   {
     "figure": "abnormal_categories.jpg",
     "class": "Maize_leaf_blight",
-    "path": "ood_corn/Maize_leaf_blight/1 (384).jpg"
+    "path": "ood_corn/Maize_leaf_blight/1 (386).jpg"
   },
   {
     "figure": "abnormal_categories.jpg",
     "class": "Maize_streak_virus",
-    "path": "ood_corn/Maize_streak_virus/1 (282).jpg"
+    "path": "ood_corn/Maize_streak_virus/1 (284).jpg"
   },
   {
     "figure": "abnormal_categories.jpg",
     "class": "Patato_Fungi",
-    "path": "ood_potato/Patato_Fungi/1 (275).jpg"
+    "path": "ood_potato/Patato_Fungi/1 (274).jpg"
   },
   {
     "figure": "abnormal_categories.jpg",

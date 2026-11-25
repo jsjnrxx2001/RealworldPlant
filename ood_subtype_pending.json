@@ -1,0 +1,66 @@
+{
+  "ood_corn/Maize_Subtype_Pending/RW-OOD-002__1 (277).jpg": {
+    "group": "RW-OOD-002",
+    "status": "pending",
+    "binary_label": "ood",
+    "candidate_subtypes": [
+      "Maize_leaf_blight",
+      "Maize_streak_virus"
+    ],
+    "source_paths": [
+      "ood_corn/Maize_leaf_blight/1 (277).jpg",
+      "ood_corn/Maize_streak_virus/1 (195).jpg"
+    ],
+    "retained_original_path": "ood_corn/Maize_leaf_blight/1 (277).jpg",
+    "git_blob_sha1": "958083cb6a9cac5aea0504f0ca80887bdb14fde6",
+    "winclip_class": "Maize_healthy"
+  },
+  "ood_corn/Maize_Subtype_Pending/RW-OOD-003__1 (279).jpg": {
+    "group": "RW-OOD-003",
+    "status": "pending",
+    "binary_label": "ood",
+    "candidate_subtypes": [
+      "Maize_leaf_blight",
+      "Maize_streak_virus"
+    ],
+    "source_paths": [
+      "ood_corn/Maize_leaf_blight/1 (279).jpg",
+      "ood_corn/Maize_streak_virus/1 (198).jpg"
+    ],
+    "retained_original_path": "ood_corn/Maize_leaf_blight/1 (279).jpg",
+    "git_blob_sha1": "a42e2456d6112ef347ec796ff3b84c5a04887d20",
+    "winclip_class": "Maize_healthy"
+  },
+  "ood_corn/Maize_Subtype_Pending/RW-OOD-004__1 (280).jpg": {
+    "group": "RW-OOD-004",
+    "status": "pending",
+    "binary_label": "ood",
+    "candidate_subtypes": [
+      "Maize_leaf_blight",
+      "Maize_streak_virus"
+    ],
+    "source_paths": [
+      "ood_corn/Maize_leaf_blight/1 (280).jpg",
+      "ood_corn/Maize_streak_virus/1 (201).jpg"
+    ],
+    "retained_original_path": "ood_corn/Maize_leaf_blight/1 (280).jpg",
+    "git_blob_sha1": "9d6e5344ffd63cd4e08cde789f2af1fc3c1b5b61",
+    "winclip_class": "Maize_healthy"
+  },
+  "ood_corn/Maize_Subtype_Pending/RW-OOD-005__1 (282).jpg": {
+    "group": "RW-OOD-005",
+    "status": "pending",
+    "binary_label": "ood",
+    "candidate_subtypes": [
+      "Maize_leaf_blight",
+      "Maize_streak_virus"
+    ],
+    "source_paths": [
+      "ood_corn/Maize_leaf_blight/1 (282).jpg",
+      "ood_corn/Maize_streak_virus/1 (204).jpg"
+    ],
+    "retained_original_path": "ood_corn/Maize_leaf_blight/1 (282).jpg",
+    "git_blob_sha1": "742979b4cf5a3aa0ff1282a5a759564b04ffaa6a",
+    "winclip_class": "Maize_healthy"
+  }
+}
